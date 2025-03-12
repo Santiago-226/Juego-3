@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS GAME</title>
+    <style>
+        body{
+            display: grid;
+            justify-items: center;
+        }
+
+        .contenedorDados{
+            display: grid;
+            column-gap: 38px;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+        }
+
+        .container-dado{
+            border: solid black;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <h1>CARRERA DE DADOS</h1>
+
+    <div class="contenedorDados">
+        <p>JUGADOR 1</p>
+        <p>JUGADOR 2</p>
+
+        <div class="container-dado dado1" id="dado1">
+            0
+        </div>
+
+        <div class="container-dado dado2" id="dado2">
+            0
+        </div>    
+        <p id="resultadoJugador1">Puntaje: 0</p>
+        <p id="resultadoJugador2">Puntaje: 0</p>
+    </div>
     <script src="juego.js"></script>
 </body>
 </html>
